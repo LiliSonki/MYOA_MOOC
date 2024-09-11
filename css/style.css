@@ -1,0 +1,124 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif; 
+}
+body {
+    height:100%; 
+    width: 100%;
+}
+.section {
+    position: fixed;
+    height: 100vh;
+    vertical-align: top;
+}
+#channels-view {
+    height: 100vh;
+    width: 399px;
+    display:block;
+	float:left;
+    border-right: solid gray 1px;
+}
+#chat-section {
+    position: absolute;
+    left: 400px;
+    width: calc(100% - 400px);
+}
+/* App bar */
+.headbar {
+    background-color: #b9b9b9;
+    height: 65px;
+    padding: 10px 10px 5px 25px;
+}
+.logo {
+    display: block;
+	float:left;
+    height: 56px;
+}
+h1 {
+    color: #0e555b;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline;
+}
+/* Channels list */
+
+ul.channel-list li { 
+    list-style-type: none;
+    display: block;
+    box-sizing: border-box;
+    padding: 22px;
+    height: 66px;
+}
+ul.channel-list a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00838f;
+    text-decoration: underline;
+}
+li.channel-name { 
+    list-style-type: none;
+    display: block;
+    box-sizing: border-box;
+    padding: 22px;
+    height: 66px;
+}
+li.channel-name a {
+    font-size: 14px;
+    color: black;
+    font-weight: normal;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: underline;
+}
+li.selected {
+    padding-right: 15px;
+    background-color: #dfdfdf;
+    border-right: #0e555b 2px solid;
+}
+li.selected a {
+    font-size: 14px;
+    color: black;
+    font-weight: normal;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+}
+.timestamp {
+    font-size: 12px;
+}
+/* Messages */
+.chat-area {
+    padding: 20px 20px 5px 25px;
+}
+.message, .my-message {
+    padding: 5px 5px 20px 0;
+    width: 75%;
+}
+.my-message p {
+    background-color: #dce39a;
+}
+.my-message h2 {
+    color: black;
+}
+h2 {
+    color: #00838f;
+    font-size: 16px;
+    font-weight: bold;
+}
+p {
+    background-color: #eeeeee;
+    padding: 5px;
+}
+button {
+    background-color: #00838f;
+    border: #0e555b 1px solid;
+    margin: 5px;
+    padding: 2px 10px 2px 10px;  
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
