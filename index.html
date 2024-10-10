@@ -11,6 +11,7 @@
     
 </head>
 <body>
+     <!--channel-area-->
 <section id="channels-view">
 <div class="headbar">
     <h1 id="app-title">Chatter|App</h1>
@@ -23,41 +24,25 @@
 </div>
 <a class="fab" href="index.html">+</a>
     <!--menu with channels-->
-<ul class="channel-list">
-    <li><a href="index.html">Favorites</a></li>
-        <li class="selected">
-            <i class="icon-group">
-                <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-                <span class="material-symbols-outlined">
-                group
-                </span>
-            </i>
-            <a href="index.html">Master Models</a><span class="timestamp">12:30</span></li>
-        <li class="channel-name">
-            <i class="icon-group">
-                <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-                <span class="material-symbols-outlined">
-                group
-                </span>
-            </i>
-            <a href="index.html">Sculptures</a><span class="timestamp">16:20</span></li>
-    <li><a href="index.html">Regular</a></li>
-        <li class="channel-name">
-            <i class="icon-group">
-                <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-                <span class="material-symbols-outlined">
-                group
-                </span>
-            </i>
-            <a href="index.html">Coating</a><span class="timestamp">Yesterday</span></li>
-        <li class="channel-name">
-            <i class="icon-group">
-                <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-                <span class="material-symbols-outlined">
-                group
-                </span>
-            </i>
-            <a href="index.html">Casting</a><span class="timestamp">3 September 2024</span></li>
+<div id="channel-list-area">
+    <h2><a href="index.html">Favorites</a></h2>
+    <ul class="channel-list">
+    <li class="selected">
+            <i class="material-icons">group</i>
+            <span class="channel-name"><a href="index.html">Master Models</a></span><span class="timestamp">12:30</span>
+    </li>
+    <li class="channel-list">
+           <i class="material-icons">group</i>
+           <span class="channel-name"><a href="index.html">Sculptures</a></span><span class="timestamp">16:20</span>
+    </li>
+    <h2><a href="index.html">Regular</a></h2>
+        <li class="channel-list">
+            <i class="material-icons">group</i>
+            <span class="channel-name"><a href="index.html">Coating</a></span><span class="timestamp">Yesterday</span></li>
+    <li class="channel-list">
+        <i class="material-icons">group</i>
+        <span class="channel-name"><a href="index.html">Casting</a></span><span class="timestamp">3 September 2024</span>
+        </li>
 </ul>
 </section>
     <!--chat area-->
@@ -78,7 +63,7 @@
         account_circle
         </span>
         <div class="message">    
-         <h2>Joseph Klibanski</h2>
+         <h3>Joseph Klibanski</h3>
          <p>I prefer working with bronze statues.</p>
         </div>
     </div>
@@ -89,7 +74,7 @@
         account_circle
         </span>
         <div class="message">
-       <h2>Daniel Arsham</h2>
+       <h3>Daniel Arsham</h3>
        <p>I prefer casting a plaster.</p>
         </div>
     </div>
@@ -110,7 +95,7 @@
         account_circle
         </span>
         <div class="message">
-       <h2>Nick Ervinck</h2>
+       <h3>Nick Ervinck</h3>
        <p>I am using fiberglass for my artworks.</p>
         </div>
      </div>

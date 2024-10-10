@@ -46,6 +46,9 @@ body {
     padding: 3px;
     margin-right: 15px;
 }
+.logo:hover {
+    background-color: #0e555b;
+}
 h1 {
     color: #0e555b;
     font-size: 20px;
@@ -57,20 +60,8 @@ h1 {
 }
 /* Channels list */
 
-ul.channel-list li { 
-    list-style-type: none;
-    box-sizing: border-box;
-    padding: 22px;
-    height: 66px;
 
-}
-ul.channel-list a {
-    font-size: 16px;
-    font-weight: bold;
-    color: #00838f;
-    text-decoration: underline;
-}
-li.channel-name { 
+li.channel-list { 
     list-style-type: none;
     box-sizing: border-box;
     padding: 22px;
@@ -78,20 +69,23 @@ li.channel-name {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    align-items: center;
+    align-items: center; 
 }
-li.channel-name:hover { 
-    padding-right: 15px;
+li.channel-list:hover { 
     background-color: #eeeeee;
 }
-li.channel-name a {
+li.channel-list a:hover { 
+    text-decoration: none;
+}
+li.channel-list a {
     font-size: 14px;
     text-decoration: underline;
     color: black;
     font-weight: normal;
     padding-right: 15px;
     padding-left: 15px;
-
+}
+.channel-name {
 font-size: 16px;
 margin: 0px 22px;
 text-overflow: ellipsis;
@@ -100,32 +94,28 @@ flex: 1 1 auto;
 }
 
 li.selected {
-    padding-right: 15px;
-    background-color: #dfdfdf;
-    border-right: #0e555b 2px solid;
+      list-style-type: none;
+    box-sizing: border-box;
+    padding: 22px;
+    height: 66px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
     align-items: center;
+    background-color: #dfdfdf;
+    border-right: #0e555b 2px solid;
 }
 li.selected:hover { 
-    padding-right: 15px;
     background-color: #eeeeee;
-    border: unset;
+    border-right: #eeeeee 2px solid;
 }
 li.selected a {
     font-size: 14px;
     color: black;
     font-weight: normal;
+    text-decoration: none;
     padding-right: 15px;
     padding-left: 15px;
-    text-decoration: none;
-
-    font-size: 16px;
-    margin: 0px 22px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    flex: 1 1 auto;
 }
 
 .timestamp {
@@ -175,9 +165,22 @@ li.selected a {
     background-color: #00838f;
     border-radius: 15px 15px 3px 15px;
 }
-h2 {
+h2 a {
     color: #00838f;
     font-size: 16px;
+    font-weight: bold;
+    display: block;
+    height: 30px;
+    padding-left: 15px;
+        font-weight: bold;
+        margin: 22px 22px 11px 11px; 
+}
+h2 a:hover {
+        text-decoration: none;
+}
+h3 {
+    color: #00838f;
+    font-size: 14px;
     font-weight: bold;
 }
 .my-message h2 {
@@ -213,7 +216,7 @@ button {
     color: #0e555b;
 }
 .favorite-button:hover {
-color: white;
+    color: white;
 }
 .fab {
 width: 44px;
@@ -234,6 +237,10 @@ right: 22px;
 
 cursor: pointer;
 }
+.fab:hover {
+    background-color: #ffffff;
+    color: #0e555b;
+    }
 .icon-group {
     float: left;
 }
